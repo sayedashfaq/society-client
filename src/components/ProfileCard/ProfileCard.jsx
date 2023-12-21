@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 const ProfileCard = ({location}) => {
   const { user } = useSelector((state) => state.authReducer.authData);
   const posts = useSelector((state)=>state.postReducer.posts)
-  const serverPublic = "http://localhost:5001/images/"
+  const serverPublic = "https://society-server-n7ay.onrender.com/images/"
 
   return (
     <div className="ProfileCard">
