@@ -10,7 +10,7 @@ const ChatBox = ({ chat, currentUser, setSendMessage,  receivedMessage }) => {
   const [userData, setUserData] = useState(null);
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState("");
-  const locate = "http://localhost:5001/images/"
+  const locate = "https://society-server-n7ay.onrender.com/images/"
   const handleChange = (newMessage)=> {
     setNewMessage(newMessage)
   }
