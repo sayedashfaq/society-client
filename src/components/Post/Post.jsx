@@ -11,7 +11,7 @@ const Post = ({ data }) => {
   const { user } = useSelector((state) => state.authReducer.authData);
   const [liked, setLiked] = useState(data.likes.includes(user._id));
   const [likes, setLikes] = useState(data.likes.length)
-const locate = 'http://localhost:5001/images/';
+const locate = 'https://society-server-n7ay.onrender.com/images/';
   
   const handleLike = () => {
     likePost(data._id, user._id);
