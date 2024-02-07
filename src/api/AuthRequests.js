@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 
-const API = axios.create({ baseURL: 'https://society-server-n7ay.onrender.com' });
+const API = axios.create({ baseURL: 'http://localhost:5001' });
 
 export const logIn= (formData)=> API.post('/auth/login',formData);
 

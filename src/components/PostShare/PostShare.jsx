@@ -14,7 +14,7 @@ const PostShare = () => {
   const loading = useSelector((state) => state.postReducer.uploading);
   const [image, setImage] = useState(null);
   const desc = useRef();
-  const serverPublic = "https://society-server-n7ay.onrender.com/images/";
+  const serverPublic = "http://localhost:5001/images/";
 
   // handle Image Change
   const onImageChange = (event) => {

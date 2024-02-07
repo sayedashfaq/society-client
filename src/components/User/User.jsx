@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { followUser, unfollowUser } from "../../actions/UserAction";
 const User = ({ person }) => {
-  const publicFolder = 'https://society-server-n7ay.onrender.com/images/';
+  const publicFolder = 'http://localhost:5001/images/';
   const { user } = useSelector((state) => state.authReducer.authData);
   const dispatch = useDispatch()
   
